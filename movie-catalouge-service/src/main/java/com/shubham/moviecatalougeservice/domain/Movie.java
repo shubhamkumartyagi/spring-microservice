@@ -1,4 +1,4 @@
-package com.shubham.movieinfoservie.controller.domain;
+package com.shubham.moviecatalougeservice.domain;
 
 import lombok.Data;
 
@@ -9,6 +9,9 @@ public class Movie {
 	
 	private String name;
 
+	public Movie() {
+		
+	}
 	public Movie(String movieId, String name) {
 		this.movieId = movieId;
 		this.name = name;

@@ -11,7 +11,7 @@ import com.shubham.movieinfoservie.controller.domain.Movie;
 public class MovieInfoController {
 
 	@RequestMapping("/{movieId}")
-	public Movie getMovie(@PathVariable("movieId") int movieId) {
+	public Movie getMovie(@PathVariable("movieId") String movieId) {
 		return new Movie(movieId, "Test Movie");
 	}
 }

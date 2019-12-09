@@ -10,6 +10,10 @@ public class MovieCatalogue {
 	private String desc;
 	
 	private int rating;
+	
+	public MovieCatalogue() {
+		
+	}
 
 	public MovieCatalogue(String name, String desc, int rating) {
 		this.name = name;
