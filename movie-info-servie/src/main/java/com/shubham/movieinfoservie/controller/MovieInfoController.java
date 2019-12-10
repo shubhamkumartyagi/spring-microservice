@@ -9,7 +9,7 @@ import com.shubham.movieinfoservie.controller.domain.Movie;
 @RestController
 @RequestMapping("/movies")
 public class MovieInfoController {
-
+	
 	@RequestMapping("/{movieId}")
 	public Movie getMovie(@PathVariable("movieId") String movieId) {
 		return new Movie(movieId, "Test Movie");
