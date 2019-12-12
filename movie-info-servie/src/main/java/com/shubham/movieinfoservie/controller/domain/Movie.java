@@ -6,12 +6,18 @@ import lombok.Data;
 public class Movie {
 
 	private String movieId;
-	
+
 	private String name;
 
-	public Movie(String movieId, String name) {
+	private String overview;
+
+	public Movie(String movieId, String name, String overview) {
 		this.movieId = movieId;
 		this.name = name;
+		this.overview = overview;
 	}
-	
+
+	public Movie() {
+
+	}
 }
